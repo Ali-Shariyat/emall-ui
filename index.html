@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/majazeh/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <title>اي‌مول | eMall</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="rtl">
+    <header class="header py-1 position-relative">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="menu">
+                    <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="menu-content">
+                        <div class="top-menu-content">
+                            <div class="d-flex justify-content-center pt-4">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="py-4 mx-5">
+                                <a class="btn btn-outline-light btn-block" href="#">تسجیل الدخول</a>
+                            </div>
+                        </div>
+                        <div class="bottom-menu-content">
+                            <div class="">
+                                <div class="list-group mt-3">
+                                    <a href="#" class="list-group-item list-group-item-action rounded-0">
+                                        <i class="fas fa-home ml-3"></i>
+                                        الصفحة الرئیسیة
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action rounded-0">
+                                        <i class="fas fa-info-circle ml-3"></i>
+                                        من نحن
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action rounded-0">
+                                        <i class="fas fa-question-circle ml-3"></i>
+                                        أسئلة مکررة
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action rounded-0">
+                                        <i class="fas fa-sign-out-alt ml-3"></i>
+                                        إغلاق البرنامج
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="under-menu"></div>
+                </div>
+                <a class="navbar-brand font-weight-bold" href="#">
+                    ایمول
+                </a>
+                <!--                 <form class="search my-2">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form> -->
+                <!-- Button trigger modal -->
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Launch demo modal
+                                    </button> -->
+                <div class="search-box">
+                    <a href="#search-content" class="text-white search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="search-content pt-2" id="search-content">
+            <div class="container">
+                <div class="d-flex align-items-baseline">
+                    <i class="fas fa-arrow-right close-search mr-2"></i>
+                    <form class="mr-2" style="flex-grow: 1;">
+                        <input class="form-control form-control-md border-0" type="search" placeholder="بحث" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 px-0 px-md-3 pt-md-3 z-index-50 sticky-top">
+                    <a class="navbar-brand-1 mt-2" href="#">
+                        <img src="assets/images/logo-full.png" alt="Logo" height="50">
+                    </a>
+                    <form class="search my-2">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="accordion" id="accordionExample">
+                        <h5 class="accordion-title text-light bg-dark">الاقسام</h5>
+                        <div class="card">
+                            <div class="card-header d-flex align-items-baseline justify-content-between " id="headingOne">
+                                <a class="p-2 pr-3 text-dark text-decoration-none" href="#" class="mb-0">
+                                    الغذائية
+                                </a>
+                                <div class="text-dark text-dark text-decoration-none w-100 text-left text-decoration-none collapsed p-2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                البقوليات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                البهارات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الحلويات و المعجنات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الزيوت
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الشاي
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المخللات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المعلبات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الاجبان و مشتقات الحليب
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                النساتل و البسكويت
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الحليب
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المشروبات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                حساسية الحنطة
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                صلصة
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الرز
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                غذاء الاطفال
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                حساء
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                قهوة
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                لحوم
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                دجاج
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المنكهات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                اجباس
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                معكرونه
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                فارغ
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                كرزات
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header d-flex align-items-baseline justify-content-between " id="headingTwo">
+                                <a class="p-2 pr-3 text-dark text-decoration-none" href="#" class="mb-0">
+                                   استهلاكية
+                                </a>
+                                <div class="text-dark text-dark text-decoration-none w-100 text-left text-decoration-none collapsed p-2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            </div>
+                            <!-- <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-dark text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">استهلاكية
+                                    </button>
+                                </h2>
+                            </div> -->
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                مساحيق الغسيل
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                سوائل التنظيف
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المطهرات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                المناديل الورقية
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                حفاظات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                صابون
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                شامبو
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                مطبخ
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                قرطاسية
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                الدخانيات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                البطاريات
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-dark text-decoration-none" href="#">
+                                                سائل جلي
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="scrollmenu bg-light">
+                            <a class="btn btn-light py-2 px-3" href="#">جمیع المنتجات</a>
+                            <a class="btn btn-light py-2 px-3" href="#">الغذائية</a>
+                            <a class="btn btn-light py-2 px-3" href="#">استهلاكية</a>
+                        </div>
+                        <div class="scrollmenu scrollmenu-detail bg-light pt-1 px-3 pb-2">
+                            <a class="btn btn-link text-decoration-none ml-1 py-1 px-3 rounded-pill active" href="#">البقولات</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">البهارات</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">الحلویات و المنجات</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">الزیوت</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">الشای</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">المخللات</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">المعلبات</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">الاجبان و مشتقات الحلیب</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">النساتل و البسکویت</a>
+                            <a class="btn btn-link text-decoration-none mx-1 py-1 px-3 rounded-pill" href="#">الحلیب</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="pager">
+                        <div class="pager-top d-flex justify-content-between align-items-baseline py-4">
+                            <div>
+                                <h4 class="mb-0">جمیع المنتجات</h4>
+                            </div>
+                            <div>
+                                <span class="pager-bottom-title text-secondary">برند</span> <a class="text-primary text-decoration-none" href="#">همه برندها</a>
+                            </div>
+                            <!-- <div class="d-flex align-items-baseline">
+                            <a class="btn btn-light border p-1 px-3 ml-1" href="#">
+                                <img src="assets/images/right-arrow.png">
+                            </a>
+                            <a class="btn btn-light border py-1 px-3" href="#">
+                                <img src="assets/images/left-arrow.png">
+                            </a>
+                            <div class="mr-3">نشان دادن <span>60</span> تا <span>392</span></div>
+                        </div> -->
+                        </div>
+                    </div>
+                    <div class="products main-products pb-4">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/jebs.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="product.html">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/jebs1.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/jebs2.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/jebs3.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/photo_2019-08-17_10-27-40.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/photo_2019-08-17_10-27-27.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/photo_2019-08-17_10-28-21.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/photo_2019-08-17_10-28-21.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 card-products">
+                                <div class="card">
+                                    <div class="card-top-half">
+                                        <img class="card-img-top" src="assets/images/photo_2019-08-17_10-28-21.jpg" alt="CaffeJozve">
+                                        <span class="badge badge-danger">1</span>
+
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <h5 class="card-title">
+                                            <a href="#">جبس مزمز بطاطس سوبر 55غم</a>
+                                        </h5>
+                                        <div class="d-flex justify-content-start align-items-baseline">
+                                            <span class="card-price text-danger">20 دینار</span>
+                                            <span class="text-secondary mr-5 f-12">الکفیل</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-success card-price f-14">10 دینار</span>
+                                            <span class="text-success card-price f-12"> (0% خصم)</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-block btn-success mt-2 d-flex justify-content-between align-items-baseline">
+                                            إضف
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mb-5">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <span class="page-link">قبل</span>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">بعد</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">ارتباط با ما</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Random feature</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Team feature</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Another one</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">درباره ما</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Random feature</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Team feature</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Another one</a></li>
+                        <li><a class="text-secondary text-decoration-none" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="text-white mb-4">شبکه‌های اجتماعی</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".category a").on("click", function() {
+            $(".popup-overlay").addClass("active");
+        });
+
+        //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+        $(".close").on("click", function(e) {
+            e.stopPropagation();
+            $(".popup-overlay").removeClass("active");
+        });
+    });
+
+    $('#myModal').on('shown.bs.modal', function() {
+        $('#myInput').trigger('focus')
+    });
+
+
+
+    $(".menu-btn").click(function() {
+        var _self = $(this);
+        _self.parents(".menu").find(".menu-content,.under-menu").addClass("active");
+        $("html,body").css("overflow", "hidden");
+    });
+    $(".under-menu").click(function() {
+        var _self = $(this);
+        _self.parents(".menu").find(".menu-content,.under-menu").removeClass("active");
+        $("html,body").css("overflow", "");
+    });
+    $(".search-btn").click(function(event) {
+        var _self = $(this);
+        $(".search-content" + _self.attr("href")).addClass("active");
+        event.preventDefault();
+    });
+    $(".close-search").click(function(event) {
+        var _self = $(this);
+        _self.parents(".search-content").removeClass("active");
+        event.preventDefault();
+    });
+    </script>
+</body>
+
+</html>

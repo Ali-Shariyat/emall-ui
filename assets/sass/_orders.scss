@@ -1,0 +1,66 @@
+.orders {
+  .table-parent {
+    overflow-x: auto;
+    .table {
+      thead {
+        th {
+          background-color: #01a29a;
+        }
+      }
+      tbody {
+        tr {
+          &:nth-of-type(odd) {
+            background-color: #fff;
+          }
+          &:nth-of-type(even) {
+            background-color: #e0f4f3;
+          }
+        }
+      }
+      .number-orders {
+        width: 20px;
+      }
+      .number-products {
+        width: 80px;
+      }
+      .discount-products {
+        width: 80px;
+      }
+      .total-price-products {
+        width: 80px;
+      }
+      .data-products {
+        width: 140px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      .table-parent {
+        .table {
+          //table-layout: fixed;
+          //width: 640px;
+          width: 100%;
+          font-size: 10px;
+          td,
+          th{
+            width: auto;
+            vertical-align: middle;
+          }
+          .discount-products{
+            display: none;
+          }
+        }
+      }
+    }
+
+    .title-orders {
+      width: 100px;
+    }
+  }
+}

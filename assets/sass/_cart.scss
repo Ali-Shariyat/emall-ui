@@ -1,0 +1,95 @@
+.cart {
+  .card-body {
+    i.fas {
+      cursor: pointer;
+    }
+  }
+  .card-img {
+    width: 100px;
+    height: 100px;
+  }
+  .line-through {
+    text-decoration: line-through;
+  }
+  h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px;
+    @media screen and (min-width:350px){
+      width: 180px;
+    }
+    @media screen and (min-width:400px){
+      width: 200px;
+    }
+    @media screen and (min-width:420px){
+      width: 240px;
+    }
+    @media screen and (min-width:450px){
+      width: 290px;
+    }
+    @media screen and (min-width:500px){
+      width: 300px;
+    }
+    @media screen and (min-width:550px){
+      width: 320px;
+    }
+    @media screen and (min-width:600px){
+      width: 370px;
+    }
+    @media screen and (min-width:768px){
+      width: 490px;
+    }
+    @media screen and (min-width:992px){
+      width: 750px;
+    }
+    @media screen and (min-width:1200px){
+      width: 950px;
+    }
+  }
+    .row{
+      .card{
+        margin-bottom: 0.5rem !important;
+        .card-body{
+          .card-title{
+            a{
+              font-size: 18px;
+              color: #000;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+}
+
+.cart-total {
+  .card {
+    & div:first-child {
+      h5 {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    div {
+      h5 {
+        font-size: 1rem;
+        position: relative;
+        padding-right: 1rem;
+        @media screen and (max-width: 576px){
+          font-size: .8rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: 100%;
+          background-color: #dedede;
+          border-radius: 1px;
+          right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.request {
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  input, textarea {
+    border-radius: 10px;
+    outline: none;
+  }
+  textarea {
+    height: 250px;
+  }
+
+}

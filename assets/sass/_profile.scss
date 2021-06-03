@@ -1,0 +1,115 @@
+.profile {
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  .logout-btn {
+    left: 10px;
+    top: 10px;
+    i {
+      font-size: 30px;
+    }
+  }
+  .profile-main {
+    border-radius: 10px;
+    .profile-avatar {
+      > div {
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+        background-color: #01a29a;
+        i.fas {
+          font-size: 60px;
+        }
+      }
+    }
+    .profile-content {
+      border-radius: 0 0 10px 10px;
+      .user-location {
+        border-radius: 10px;
+        border: 2px solid #169a8d;
+        padding: 0 8px;
+      }
+      .user-communication {
+        > div {
+          i {
+            font-size: 20px;
+            color: #787878;
+          }
+          h6 {
+            color: #787878;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            direction: ltr;
+          }
+        }
+      }
+    }
+    .edit-profile-btn {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: #01a29a;
+      margin: auto;
+      bottom: -30px;
+      right: 0;
+      left: 0;
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &:not(.edit-profile) {
+    .profile-main {
+      box-shadow: 0 0 8px -3px #9a9a9a;
+    }
+  }
+  .profile-content{
+    > div{
+      input{
+        @media only screen and (max-width: 600px) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  &.edit-profile {
+    input{
+      border-radius: 50px;
+      outline: none;
+      &.form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #169a8d;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(1, 162, 154, 0.5);
+      }
+    }
+    .see-password{
+      left: 15px;
+      cursor: pointer;
+      top:50%;
+      font-size: 20px;
+      transform: translate(0,-50%);
+    }
+    .btn-custom{
+      background-color: #01a29a;
+      border-radius: 50px;
+      font-size: 25px;
+      &.form-control:focus {
+        border-color: #169a8d;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(1, 162, 154, 0.5);
+      }
+    }
+    .profile-main {
+      border-radius: 10px;
+      .profile-avatar {
+        > div {
+          background-color: #01a29a;
+          box-shadow: 0 0 0 6px #fff;
+        }
+      }
+    }
+  }
+}

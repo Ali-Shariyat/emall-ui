@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/majazeh/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+    <title>اي‌مول | eMall</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="rtl">
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- <div class="logo">
+                    <img src="assets/images/logo-full.png" alt="Logo" height="50">
+                </div> -->
+            </div>
+            <div class="col-lg-9"></div>
+        </div>
+    </div>
+</div>
+<div class="main request">
+    <div class="profile d-flex justify-content-center align-items-center">
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-10 p-0">
+            <form class="text-center position-relative pb-3">
+                <div class="d-inline-block mb-2">
+                    <h5 class="f-14 text-right mb-3">إسم المنتج</h5>
+                    <input type="text" class="border-0 p-3 form-control w-auto d-inline-block h-auto" placeholder="اسم">
+                </div>
+                <div class="d-inline-block mb-2 mt-3">
+                    <h5 class="f-14 text-right mb-3">وصف المنتج <span>(غیرضروري)</span></h5>
+                    <textarea type="text" class="border-0 p-3 form-control w-auto d-inline-block"
+                              placeholder="ادخل وصف المنتج هنا"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-white mb-4">ارتباط با ما</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Team feature</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Another one</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-white mb-4">درباره ما</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Team feature</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Another one</a></li>
+                    <li><a class="text-secondary text-decoration-none" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h5 class="text-white mb-4">شبکه‌های اجتماعی</h5>
+                <div>
+                    <img class="social-networks" src="assets/images/facebook.png">
+                    <img class="social-networks" src="assets/images/instagram.png">
+                    <img class="social-networks" src="assets/images/twitter.png">
+                    <img class="social-networks" src="assets/images/google-plus.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".category a").on("click", function () {
+            $(".popup-overlay").addClass("active");
+        });
+
+        //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+        $(".close").on("click", function (e) {
+            e.stopPropagation();
+            $(".popup-overlay").removeClass("active");
+        });
+    });
+</script>
+</body>
+
+</html>

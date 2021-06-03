@@ -1,0 +1,123 @@
+/* Product */
+.product-body {
+  background-color: #01a29a05;
+  .product {
+    //background-color: #fdfdfd;
+    .container {
+      background: #fff;
+      box-shadow: 5px 7px 10px 0px #6565651c;
+      border-radius: 6px;
+      .row {
+        .description {
+          p {
+            padding-right: 1rem;
+            border-right: 1px solid #e8e8e8;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .border-none {
+            border: 0 !important;
+          }
+        }
+      }
+    }
+    .btn-product{
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      button{
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* -- quantity box -- */
+
+
+
+.quantity .input-text.qty {
+  height: 38px;
+  width: 35px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #efefef;
+}
+.quantity {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  .input-text.qty{
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+.quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  width: 32px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+  border-right: 0;
+  border-bottom-left-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+
+.quantity.buttons_added .plus {
+  border-left: 0;
+  border-bottom-right-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+  background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+  outline: none;
+}
+
+.span-label {
+  font-size: 14px;
+}
+
+.emall-price {
+  font-size: 20px;
+}
+
+.market-price {
+  //text-decoration: line-through;
+  font-size: 14px;
+}
